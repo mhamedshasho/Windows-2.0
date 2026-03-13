@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebOS</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/desktop.css">
+<link rel="stylesheet" href="css/windows.css">
+<link rel="stylesheet" href="css/taskbar.css">
+<link rel="stylesheet" href="css/widgets.css">
+<link rel="stylesheet" href="css/animations.css">
+
+</head>
+<body>
+
+<div id="lockscreen">
+<h1>WebOS</h1>
+<div id="lockClock"></div>
+<button onclick="unlock()">Unlock</button>
+</div>
+
+<div id="desktop"></div>
+
+<div id="widgets"></div>
+
+<div id="windows"></div>
+
+<div id="taskbar">
+<button id="startBtn">☰</button>
+<div id="clock"></div>
+</div>
+
+<div id="startMenu">
+<button onclick="openApp('notes')">Notes</button>
+<button onclick="openApp('calculator')">Calculator</button>
+<button onclick="openApp('browser')">Browser</button>
+<button onclick="openApp('files')">Files</button>
+<button onclick="openApp('paint')">Paint</button>
+<button onclick="openApp('terminal')">Terminal</button>
+<button onclick="openApp('taskmanager')">Task Manager</button>
+<button onclick="openApp('store')">App Store</button>
+</div>
+
+<div id="notifications"></div>
+
+<!-- Core JS -->
+<script src="js/core/system.js"></script>
+<script src="js/core/clock.js"></script>
+<script src="js/core/windows.js"></script>
+<script src="js/core/desktop.js"></script>
+<script src="js/core/drag.js"></script>
+<script src="js/core/resize.js"></script>
+<script src="js/core/notifications.js"></script>
+
+<!-- System -->
+<script src="js/system/filesystem.js"></script>
+<script src="js/system/appManager.js"></script>
+<script src="js/system/taskManager.js"></script>
+
+<!-- Widgets -->
+<script src="js/widgets/clockWidget.js"></script>
+<script src="js/widgets/notesWidget.js"></script>
+<script src="js/widgets/weather.js"></script>
+
+<!-- Apps -->
+<script src="js/apps/notes.js"></script>
+<script src="js/apps/calculator.js"></script>
+<script src="js/apps/browser.js"></script>
+<script src="js/apps/files.js"></script>
+<script src="js/apps/paint.js"></script>
+<script src="js/apps/music.js"></script>
+<script src="js/apps/terminal.js"></script>
+<script src="js/apps/taskmanager.js"></script>
+<script src="js/apps/store.js"></script>
+
+</body>
+</html>
